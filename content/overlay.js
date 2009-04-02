@@ -5,10 +5,10 @@ var contextStyleSwitcher = {
   },
 
   toggleVisibility: function() {
-    if (gContextMenu.onTextInput
-      || gContextMenu.onImage
-      || gContextMenu.onLink
-      || gContextMenu.isTextSelected) {
+    if (gContextMenu.onTextInput ||
+      gContextMenu.onImage ||
+      gContextMenu.onLink ||
+      gContextMenu.isTextSelected) {
       document.getElementById("context-style-switcher_sep").hidden = true;
       document.getElementById("context-style-switcher_menu").hidden = true;
     } else {
@@ -16,6 +16,6 @@ var contextStyleSwitcher = {
       document.getElementById("context-style-switcher_menu").hidden = false;
     }
   }
-}
+};
 
 window.addEventListener("load", contextStyleSwitcher.init, false);

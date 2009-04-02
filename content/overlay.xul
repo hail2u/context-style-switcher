@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE window [
-<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
-%browserDTD;
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+  %browserDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   id="context-style-switcher_overlay">
   <script type="application/x-javascript"
-    src="chrome://context-style-switcher/content/context-style-switcher_overlay.js"/>
+    src="chrome://context-style-switcher/content/overlay.js"/>
 
   <popup id="contentAreaContextMenu">
     <menuseparator id="context-style-switcher_sep"
@@ -22,10 +22,12 @@
           accesskey="&pageStyleNoStyle.accesskey;"
           oncommand="setStyleDisabled(true); event.stopPropagation();"
           type="radio"/>
+
         <menuitem label="&pageStylePersistentOnly.label;"
           accesskey="&pageStylePersistentOnly.accesskey;"
           type="radio"
           checked="true"/>
+
         <menuseparator/>
       </menupopup>
     </menu>

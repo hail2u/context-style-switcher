@@ -3,7 +3,11 @@
   xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <RDF:Description about="urn:mozilla:install-manifest">
     <em:id>{a9f1b95d-50c5-464d-a54b-fd53c5a3fe3c}</em:id>
+    <em:name>Context Style Switcher</em:name>
     <em:version>1.0.7</em:version>
+    <em:description>Change Page Style via context menu.</em:description>
+    <em:creator>Kyo Nagashima</em:creator>
+    <em:homepageURL>http://hail2u.net/archives/fxexts.html#context-style-switcher</em:homepageURL>
 
     <em:targetApplication>
       <RDF:Description>
@@ -12,16 +16,5 @@
         <em:maxVersion>3.0.*</em:maxVersion>
       </RDF:Description>
     </em:targetApplication>
-
-    <em:name>Context Style Switcher</em:name>
-    <em:description>Change Page Style via context menu.</em:description>
-    <em:creator>Kyo Nagashima</em:creator>
-    <em:homepageURL>http://hail2u.net/archives/fxexts.html#context-style-switcher</em:homepageURL>
-
-    <em:file>
-      <RDF:Description about="urn:mozilla:extension:file:context-style-switcher.jar">
-        <em:package>content/context-style-switcher/</em:package>
-      </RDF:Description>
-    </em:file>
   </RDF:Description>
 </RDF:RDF>
