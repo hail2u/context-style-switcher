@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <RDF:Description about="urn:mozilla:install-manifest">
+  <Description about="urn:mozilla:install-manifest">
     <em:id>{a9f1b95d-50c5-464d-a54b-fd53c5a3fe3c}</em:id>
     <em:name>Context Style Switcher</em:name>
     <em:version>1.0.7</em:version>
@@ -10,11 +10,11 @@
     <em:homepageURL>http://hail2u.net/archives/fxexts.html#context-style-switcher</em:homepageURL>
 
     <em:targetApplication>
-      <RDF:Description>
+      <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.0</em:minVersion>
+        <em:minVersion>3.0</em:minVersion>
         <em:maxVersion>3.0.*</em:maxVersion>
-      </RDF:Description>
+      </Description>
     </em:targetApplication>
-  </RDF:Description>
-</RDF:RDF>
+  </Description>
+</RDF>
