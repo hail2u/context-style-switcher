@@ -1,2 +1,3 @@
-overlay	chrome://browser/content/browser.xul	chrome://context-style-switcher/content/overlay.xul
 content	context-style-switcher	content/
+
+overlay	chrome://browser/content/browser.xul	chrome://context-style-switcher/content/overlay.xul
