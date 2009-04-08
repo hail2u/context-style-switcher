@@ -8,12 +8,36 @@
   <script type="application/x-javascript"
     src="chrome://context-style-switcher/content/overlay.js"/>
 
+  <toolbarpalette id="BrowserToolbarPalette">
+    <!-- begin: copy from Mozilla Firefox src -->
+    <toolbarbutton id="context-style-switcher-button"
+      label="&pageStyleMenu.label;"
+      image="chrome://context-style-switcher/skin/toolbarbutton_icon.png"
+      type="menu">
+      <menupopup onpopupshowing="stylesheetFillPopup(this);"
+        oncommand="stylesheetSwitchAll(window._content, event.target.getAttribute('data')); setStyleDisabled(false);">
+        <menuitem label="&pageStyleNoStyle.label;"
+          accesskey="&pageStyleNoStyle.accesskey;"
+          oncommand="setStyleDisabled(true); event.stopPropagation();"
+          type="radio"/>
+
+        <menuitem label="&pageStylePersistentOnly.label;"
+          accesskey="&pageStylePersistentOnly.accesskey;"
+          type="radio"
+          checked="true"/>
+
+        <menuseparator/>
+      </menupopup>
+    </toolbarbutton>
+    <!-- end: copy from Mozilla Firefox src -->
+  </toolbarpalette>
+
   <popup id="contentAreaContextMenu">
-    <menuseparator id="context-style-switcher_sep"
+    <menuseparator id="context-sep-context-style-switcher"
       insertbefore="context-sep-properties"/>
 
     <!-- begin: copy from Mozilla Firefox src -->
-    <menu id="context-style-switcher_menu"
+    <menu id="context-context-style-switcher"
       label="&pageStyleMenu.label;"
       accesskey="&pageStyleMenu.accesskey;"
       insertbefore="context-sep-properties">
