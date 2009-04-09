@@ -5,7 +5,7 @@
     <em:id>{a9f1b95d-50c5-464d-a54b-fd53c5a3fe3c}</em:id>
     <em:name>Context Style Switcher</em:name>
     <em:version>1.0.7</em:version>
-    <em:description>Change Page Style via context menu.</em:description>
+    <em:description>Change Page Style via toolbar button or context menu.</em:description>
     <em:creator>Kyo Nagashima</em:creator>
     <em:homepageURL>http://hail2u.net/archives/fxexts.html#context-style-switcher</em:homepageURL>
 
