@@ -1,0 +1,7 @@
+#context-style-switcher-button {
+  list-style-image: url("chrome://context-style-switcher/skin/toolbarbutton_icon_large.png");
+}
+
+toolbar[iconsize="small"] #context-style-switcher-button {
+  list-style-image: url("chrome://context-style-switcher/skin/toolbarbutton_icon_small.png");
+}

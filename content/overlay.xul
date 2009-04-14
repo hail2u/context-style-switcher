@@ -12,7 +12,6 @@
     <!-- begin: copy from Mozilla Firefox src -->
     <toolbarbutton id="context-style-switcher-button"
       label="&pageStyleMenu.label;"
-      image="chrome://context-style-switcher/skin/toolbarbutton_icon.png"
       type="menu">
       <menupopup onpopupshowing="stylesheetFillPopup(this);"
         oncommand="stylesheetSwitchAll(window._content, event.target.getAttribute('data')); setStyleDisabled(false);">
