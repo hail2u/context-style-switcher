@@ -2,6 +2,9 @@ content	context-style-switcher	content/
 
 overlay	chrome://browser/content/browser.xul	chrome://context-style-switcher/content/overlay.xul
 
+locale	context-style-switcher	en-US	locale/en-US/
+locale	context-style-switcher	ja	locale/ja/
+
 skin	context-style-switcher	classic/1.0	skin/
 style	chrome://global/content/customizeToolbar.xul	chrome://context-style-switcher/skin/overlay.css
 style	chrome://browser/content/browser.xul	chrome://context-style-switcher/skin/overlay.css

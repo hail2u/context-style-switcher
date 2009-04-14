@@ -2,6 +2,8 @@
 <!DOCTYPE window [
   <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
   %browserDTD;
+  <!ENTITY % context-style-switcher_overlayDTD SYSTEM "chrome://context-style-switcher/locale/overlay.dtd">
+  %context-style-switcher_overlayDTD;
 ]>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   id="context-style-switcher_overlay">
@@ -12,6 +14,7 @@
     <!-- begin: copy from Mozilla Firefox src -->
     <toolbarbutton id="context-style-switcher-button"
       label="&pageStyleMenu.label;"
+      tooltiptext="&context-style-switcher.command.tooltip;"
       type="menu">
       <menupopup onpopupshowing="stylesheetFillPopup(this);"
         oncommand="stylesheetSwitchAll(window._content, event.target.getAttribute('data')); setStyleDisabled(false);">
