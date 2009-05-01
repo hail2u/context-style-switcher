@@ -5,3 +5,9 @@
 toolbar[iconsize="small"] #context-style-switcher-button {
   list-style-image: url("chrome://context-style-switcher/skin/toolbarbutton_icon_small.png");
 }
+
+#CustomizeToolbarWindow #context-style-switcher-button {
+  -moz-box-orient: vertical;
+  min-width: 0;
+  padding: 5px;
+}
