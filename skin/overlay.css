@@ -1,13 +1,8 @@
 #context-style-switcher-button {
+  -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#menu-vertical");
   list-style-image: url("chrome://context-style-switcher/skin/toolbarbutton_icon_large.png");
 }
 
 toolbar[iconsize="small"] #context-style-switcher-button {
   list-style-image: url("chrome://context-style-switcher/skin/toolbarbutton_icon_small.png");
-}
-
-#CustomizeToolbarWindow #context-style-switcher-button {
-  -moz-box-orient: vertical;
-  min-width: 0;
-  padding: 5px;
 }
