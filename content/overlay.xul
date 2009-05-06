@@ -2,11 +2,11 @@
 <!DOCTYPE window [
   <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
   %browserDTD;
-  <!ENTITY % context-style-switcher_overlayDTD SYSTEM "chrome://context-style-switcher/locale/overlay.dtd">
-  %context-style-switcher_overlayDTD;
+  <!ENTITY % overlayDTD SYSTEM "chrome://context-style-switcher/locale/overlay.dtd">
+  %overlayDTD;
 ]>
-<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  id="context-style-switcher_overlay">
+<overlay id="context-style-switcher_overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript"
     src="chrome://context-style-switcher/content/overlay.js"/>
 

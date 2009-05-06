@@ -1,16 +1,19 @@
 var contextStyleSwitcher = {
-  init: function() {
+  init: function () {
     var contextMenu = document.getElementById("contentAreaContextMenu");
     contextMenu.addEventListener("popupshowing", contextStyleSwitcher.toggleVisibility, false);
   },
 
-  toggleVisibility: function() {
+  toggleVisibility: function () {
+    var sep     = document.getElementById("context-sep-context-style-switcher");
+    var command = document.getElementById("context-context-style-switcher");
+
     if (gContextMenu.onTextInput || gContextMenu.onImage || gContextMenu.onLink || gContextMenu.isTextSelected) {
-      document.getElementById("context-sep-context-style-switcher").hidden = true;
-      document.getElementById("context-context-style-switcher").hidden     = true;
+      sep.hidden     = true;
+      command.hidden = true;
     } else {
-      document.getElementById("context-sep-context-style-switcher").hidden = false;
-      document.getElementById("context-context-style-switcher").hidden     = false;
+      sep.hidden     = false;
+      command.hidden = false;
     }
   }
 };
