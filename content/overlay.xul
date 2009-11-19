@@ -11,7 +11,6 @@
     src="chrome://context-style-switcher/content/overlay.js"/>
 
   <toolbarpalette id="BrowserToolbarPalette">
-    <!-- begin: copy from Mozilla Firefox src -->
     <toolbarbutton id="context-style-switcher-button"
       label="&pageStyleMenu.label;"
       tooltiptext="&context-style-switcher.command.tooltip;"
@@ -31,14 +30,11 @@
         <menuseparator/>
       </menupopup>
     </toolbarbutton>
-    <!-- end: copy from Mozilla Firefox src -->
   </toolbarpalette>
 
   <popup id="contentAreaContextMenu">
-    <menuseparator id="context-sep-context-style-switcher"
-      insertbefore="context-sep-properties"/>
+    <menuseparator id="context-sep-context-style-switcher"/>
 
-    <!-- begin: copy from Mozilla Firefox src -->
     <menu id="context-context-style-switcher"
       label="&pageStyleMenu.label;"
       accesskey="&pageStyleMenu.accesskey;"
@@ -58,6 +54,5 @@
         <menuseparator/>
       </menupopup>
     </menu>
-    <!-- end: copy from Mozilla Firefox src -->
   </popup>
 </overlay>
