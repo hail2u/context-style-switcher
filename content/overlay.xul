@@ -74,8 +74,7 @@
 
     <menu id="context-context-style-switcher"
       label="&pageStyleMenu.label;"
-      accesskey="&pageStyleMenu.accesskey;"
-      insertbefore="context-sep-properties">
+      accesskey="&pageStyleMenu.accesskey;">
       <menupopup onpopupshowing="stylesheetFillPopup(this);"
         oncommand="stylesheetSwitchAll(window._content, event.target.getAttribute('data')); setStyleDisabled(false);">
         <menuitem label="&pageStyleNoStyle.label;"
